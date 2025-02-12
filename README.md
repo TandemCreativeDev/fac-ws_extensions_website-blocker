@@ -1,5 +1,4 @@
-# FAC Browser Extension Workshop: Heading Highlighter
-
+# FAC Browser Extension Workshop: Website Blocker
 ---
 
 ## The Problem
