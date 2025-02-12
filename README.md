@@ -74,7 +74,7 @@ src/
 ```
 
 > [!NOTE]
-> This is not the only way to solve this problem, but for plasmo to work you will need as a minimum `popup.tsx` in the `src` folder and either `content.ts` in the `src` folder or a `contents` folder with code files that interact with the webpages' DOM elements.
+> This is not the only way to solve this problem, but for plasmo to work you will need as a minimum `popup.tsx` in the `src` folder and either `content.ts` in the `src` folder or a `contents` folder, as will as a utility to interact with the [storage API](https://docs.plasmo.com/framework/storage).
 
 ---
 
