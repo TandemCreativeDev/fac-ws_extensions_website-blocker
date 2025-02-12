@@ -27,11 +27,6 @@ function IndexPopup() {
   return (
     <div className="plasmo-flex plasmo-items-center plasmo-justify-center plasmo-h-64 plasmo-w-56 plasmo-flex-col plasmo-gap-5 plasmo-bg-slate-200">
       <h1 className="plasmo-text-lg">Jack's Website Blocker</h1>
-      {/* <button */}
-      {/*   onClick={handleEnabledClick} */}
-      {/*   className={`plasmo-w-24 plasmo-py-2 plasmo-text-lg plasmo-rounded-md plasmo-my-10 focus:plasmo-ring-4 focus:plasmo-ring-blue-400 ${isEnabled ? "plasmo-bg-green-500" : "plasmo-bg-red-500"}`}> */}
-      {/*   {isEnabled ? `Unblock` : `Block`} */}
-      {/* </button> */}
       <Toggle onChange={handleEnabledClick} checked={isEnabled} />
       <a
         className="plasmo-bg-slate-900 plasmo-p-3 plasmo-text-white plasmo-rounded-md"

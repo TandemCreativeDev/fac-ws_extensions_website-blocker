@@ -21,11 +21,6 @@ function OptionsPage() {
   const [websiteUrl, setWebsiteUrl] = useState<string>("");
   const [isEnabled, setIsEnabledState] = useState<boolean>(true);
 
-  // const handleClear = async () => {
-  //   await clearWebsites();
-  //   setData([]);
-  // };
-
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     console.log("??askdfjasdkfjhs");
@@ -67,11 +62,6 @@ function OptionsPage() {
         Beanblocker
       </h1>
       <div className="plasmo-flex plasmo-flex-col plasmo-justify-center plasmo-items-center plasmo-h-28-2 plasmo-bg-gray-100 plasmo-w-8/12 plasmo-gap-32">
-        {/* <button */}
-        {/*   onClick={handleEnabledClick} */}
-        {/*   className={`plasmo-w-40 plasmo-h-20 plasmo-text-white plasmo-text-3xl plasmo-rounded-md plasmo-mt-10 plasmo-mb-10 focus:plasmo-ring-8 focus:plasmo-ring-blue-400 ${isEnabled ? "plasmo-bg-green-600" : "plasmo-bg-red-600"}`}> */}
-        {/*   {isEnabled ? `Unblock` : `Block`} */}
-        {/* </button> */}
         <div className=" plasmo-h-52 plasmo-gap-5 plasmo-w-72 plasmo-flex plasmo-flex-col plasmo-justify-center plasmo-items-center plasmo-bg-white plasmo-flex-grow-0 plasmo-rounded-md plasmo-shadow-md">
           <h2 className="plasmo-text-xl">Toggle on/off</h2>
           <Toggle onChange={handleEnabledClick} checked={isEnabled} />
@@ -100,12 +90,6 @@ function OptionsPage() {
             </button>
           </form>
         </div>
-        {/* <button */}
-        {/*   onClick={handleClear} */}
-        {/*   className="plasmo-bg-red-600 plasmo-text-white plasmo-p-5 plasmo-rounded-md plasmo-mt-4 plasmo-mb-10" */}
-        {/*   type="button"> */}
-        {/*   Clear All Blocked Websites */}
-        {/* </button> */}
       </div>
       <div className="plasmo-shadow-md plasmo-w-4/12 plasmo-h-screen">
         <p className="plasmo-my-10 plasmo-text-center plasmo-text-2xl">
