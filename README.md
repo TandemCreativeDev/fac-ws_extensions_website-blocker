@@ -4,12 +4,12 @@
 
 ## The Problem
 
-We need to make a website blocker to focus when studying or working. This will need to read the current URL in the browser, and redirect to another URL if the current URL matches the websites that have been chosen to be blocked.
+For the stretch goal, this project has:
+- A dynamically updating icon that changes whether the blocking behaviour is enabled or not
+- An options tab UI that allows users to customise the list of blocked websites
+- A custom hotkey for the user to enable/disable the blocking behaviour from their keyboard
 
-> [!TIP]
-> You can inspect the browser's URL with `window.location.href`.
-
-If you have completed this and want to continue with this challenge, go to the [stretch goal branch](https://github.com/TandemCreativeDev/fac-ws_extensions_website-blocker/tree/stretch) and learn more about plasmo's [background service workers](https://docs.plasmo.com/framework/background-service-worker), [conditional rendering of icons](https://www.answeroverflow.com/m/1204129318830219335), and the ability to use an 'options' [tab](https://docs.plasmo.com/framework/tab-pages) to allow the user to customise the websites that they are blocking.
+Feel free to work on any of these!
 
 ---
 
@@ -75,9 +75,6 @@ The folder structure used for this exercise is as follows:
 │   └── utils
 │       └── storageHandler.ts
 ```
-
-> [!NOTE]
-> This is not the only way to solve this problem, but for plasmo to work you will need as a minimum `popup.tsx` in the `src` folder and either `content.ts` in the `src` folder or a `contents` folder with code files that interact with the webpages' DOM elements.
 
 ---
 
