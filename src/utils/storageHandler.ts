@@ -24,11 +24,6 @@ const getIsEnabled = async (): Promise<boolean> => {
   return enabled ?? true;
 };
 
-const removeWebsite = async (index) => {
-  const currentArray = (await storage.get<any[]>("websites")) || [];
-  currentArray.splice(index, 1);
-  await storage.set("websites", currentArray);
-};
 
 addToStorage("reddit.com");
 addToStorage("youtube.com");
@@ -38,5 +33,4 @@ export {
   addToStorage,
   setIsEnabled,
   getIsEnabled,
-  removeWebsite
 };
