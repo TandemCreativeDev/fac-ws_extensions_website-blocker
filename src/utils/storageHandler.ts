@@ -28,8 +28,10 @@ const removeWebsite = async (index) => {
   const currentArray = (await storage.get<any[]>("websites")) || [];
   currentArray.splice(index, 1);
   await storage.set("websites", currentArray);
-  console.log(index);
 };
+
+addToStorage("reddit.com");
+addToStorage("youtube.com");
 
 export {
   storageGetter,

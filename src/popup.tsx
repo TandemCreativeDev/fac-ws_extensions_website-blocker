@@ -14,8 +14,6 @@ function IndexPopup() {
     await setIsEnabled(newState);
   };
 
-  const extensionId = chrome.runtime.id;
-
   useEffect(() => {
     const fetchEnabled = async () => {
       const enabled = await getIsEnabled();
@@ -26,14 +24,8 @@ function IndexPopup() {
 
   return (
     <div className="plasmo-flex plasmo-items-center plasmo-justify-center plasmo-h-64 plasmo-w-56 plasmo-flex-col plasmo-gap-5 plasmo-bg-slate-200">
-      <h1 className="plasmo-text-lg">Jack's Website Blocker</h1>
+      <h1 className="plasmo-text-lg">Website Blocker</h1>
       <Toggle onChange={handleEnabledClick} checked={isEnabled} />
-      <a
-        className="plasmo-bg-slate-900 plasmo-p-3 plasmo-text-white plasmo-rounded-md"
-        target="_blank"
-        href={`chrome-extension://${extensionId}/tabs/options.html`}>
-        Options
-      </a>
     </div>
   );
 }
