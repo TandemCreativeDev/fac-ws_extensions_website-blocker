@@ -1,4 +1,4 @@
-# FAC Browser Extension Workshop: Heading Highlighter
+# FAC Browser Extension Workshop: Website Blocker
 
 ---
 
@@ -29,12 +29,12 @@ pnpm create plasmo --with-tailwindcss
 pnpm create plasmo
 ```
 
-2. Name the project `heading-highlighter` and run through the other setup configuration options.
+2. Name the project `website-blocker` and run through the other setup configuration options.
 
 3. Go into the project folder:
 
 ```sh
-cd heading-highlighter
+cd website-blocker
 ```
 
 4. Open in your favourite code editor (if configured):
