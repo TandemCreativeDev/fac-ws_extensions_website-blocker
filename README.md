@@ -91,9 +91,10 @@ Ensure you have **Node.js** and **pnpm** installed. Then, install Plasmo depende
 pnpm install
 ```
 
-The following step can be used in your project aswell to test changes you make in the code dynamically:
 
 ### **3. Run in Development Mode**
+
+The following step can be used in your project to test changes you make in the code dynamically:
 
 You can run the extension in **development mode** to test it live:
 
